@@ -14,14 +14,14 @@ You need ```.wav``` upload audiofile to the app, and it will try to recognize ch
 After ```Open...``` button is clicked the program will recognize simple chords.
 
 
-<img src="scrn/Screenshot1.png">
+<img src="scrn/Screenshot1.png" height="500px">
 
 ## Chroma
 
 Also you can see **pitch class profiles** during the time by clicking 
 ```Show chromogram...```
 
-<img src="scrn/Screenshot2.png">
+<img src="scrn/Screenshot2.png" height="400px">
 
 ## "Spleeting" the stems
 You can _separate_ audio by stems and
@@ -29,7 +29,7 @@ use **accompaniment**, **piano**, **accompaniment without drums and bass**
 by choosing an option and clicking ```Put stems into...```
 
 ### Warning
-First stems separation will take some time. App needs to download **pretrained models** for it
+First stems separation will take some time. App needs time to download **pretrained models**.
 ## Reference
 1. If you are interested in algorythm you should consider exploring
 this project: https://github.com/chenhuiyi/chord-recognition/
