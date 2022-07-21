@@ -24,8 +24,8 @@ Also you can see **pitch class profiles** during the time by clicking
 <img src="scrn/Screenshot2.png" height="400px">
 
 ## "Spleeting" the stems
-You can _separate_ audio by stems and
-use **accompaniment**, **piano**, **accompaniment without drums and bass**
+You can **separate** audio by stems and
+use _accompaniment_, _piano_, _accompaniment without drums and bass_
 by choosing an option and clicking ```Put stems into...```
 
 ### Warning
