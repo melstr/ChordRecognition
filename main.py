@@ -36,8 +36,8 @@ class ChromoUi(QWidget):
 
         self.ChromaWidget.canvas.fig.subplots_adjust(0.055, 0.1, 0.98, 0.95)
         librosa.display.specshow(chroma, y_axis='chroma', cmap='gray_r', x_axis='time', ax=ax, hop_length= hl)
-        ax.set_xlabel("Время (с)")
-        ax.set_ylabel("Частотные классы")
+        ax.set_xlabel("Time (sec)")
+        ax.set_ylabel("Pitch class profiles")
         ax.set_xticks(np.arange(0, int(musicDuration) + 1, 2.0))
         adding = 0
 
@@ -128,7 +128,7 @@ class Ui(QtWidgets.QMainWindow):
 
     def browseFiles(self):
         fname = ''
-        fname = QFileDialog.getOpenFileName(self, 'Откройте аудиофайл для распознавания аккордов ', '/home/my_user_name/', 'Аудиофайлы .wav (*.wav)')
+        fname = QFileDialog.getOpenFileName(self, 'Open an audiofile for chord recognition ', '/home/my_user_name/', 'Аудиофайлы .wav (*.wav)')
 
         if fname != '':
             self.loadFile(filepath=fname[0])
@@ -140,16 +140,16 @@ class Ui(QtWidgets.QMainWindow):
         print(self.StemsList.currentText())
         saveTo =''
         stemName = ''
-        saveTo = QFileDialog.getExistingDirectory(self,"Выберите папку для сохранения инструментов ","/home/my_user_name/", QFileDialog.ShowDirsOnly)
+        saveTo = QFileDialog.getExistingDirectory(self,"Chose a folder for saving stems ","/home/my_user_name/", QFileDialog.ShowDirsOnly)
         stems = ''
         if saveTo != '':
-            if self.StemsList.currentText() == 'Фортепиано':
+            if self.StemsList.currentText() == 'Piano':
                 stems = 'spleeter:5stems'
                 stemName ='piano.wav'
-            elif self.StemsList.currentText() == 'Аккомпанемента':
+            elif self.StemsList.currentText() == 'Whole accompaniment':
                 stems = 'spleeter:2stems'
                 stemName = 'accompaniment.wav'
-            elif self.StemsList.currentText() == 'Аккомпанемента без баса и барабанов':
+            elif self.StemsList.currentText() == 'Accompaniment without drums and bass':
                 stems = 'spleeter:4stems'
                 stemName = 'other.wav'
 

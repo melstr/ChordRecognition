@@ -31,7 +31,7 @@
          </font>
         </property>
         <property name="text">
-         <string>ChordRec - Распознавание аккордов в аудофайлах</string>
+         <string>ChordRec - Chord recognition in .wav audiofiles</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -55,14 +55,14 @@
         <item row="0" column="0" colspan="2">
          <widget class="QLabel" name="label_2">
           <property name="text">
-           <string>Открыть аудиофайл</string>
+           <string>Open audiofile</string>
           </property>
          </widget>
         </item>
         <item row="1" column="0">
          <widget class="QPushButton" name="OpenFileButton">
           <property name="text">
-           <string>Открыть...</string>
+           <string>Open...</string>
           </property>
          </widget>
         </item>
@@ -72,7 +72,7 @@
         <item row="0" column="2" colspan="2">
          <widget class="QLabel" name="label_3">
           <property name="text">
-           <string>Распознать аккорды в партии:</string>
+           <string>Recognize in stem:</string>
           </property>
          </widget>
         </item>
@@ -83,17 +83,17 @@
           </property>
           <item>
            <property name="text">
-            <string>Фортепиано</string>
+            <string>Piano</string>
            </property>
           </item>
           <item>
            <property name="text">
-            <string>Аккомпанемента</string>
+            <string>Whole accompaniment</string>
            </property>
           </item>
           <item>
            <property name="text">
-            <string>Аккомпанемента без баса и барабанов</string>
+            <string>Accompaniment without drums and bass</string>
            </property>
           </item>
          </widget>
@@ -104,7 +104,7 @@
            <bool>false</bool>
           </property>
           <property name="text">
-           <string>Распознать...</string>
+           <string>Put stems into...</string>
           </property>
          </widget>
         </item>
@@ -116,7 +116,7 @@
          <bool>false</bool>
         </property>
         <property name="text">
-         <string>Открыть хромограмму...</string>
+         <string>Show chromogram...</string>
         </property>
        </widget>
       </item>
@@ -145,7 +145,7 @@
            </font>
           </property>
           <property name="text">
-           <string>Аккордовая последовательность:</string>
+           <string>Chord progression:</string>
           </property>
          </widget>
         </item>
@@ -235,7 +235,7 @@
            </font>
           </property>
           <property name="text">
-           <string>Спектрограмма:</string>
+           <string>Spectrogram:</string>
           </property>
          </widget>
         </item>
@@ -272,7 +272,7 @@
          </font>
         </property>
         <property name="text">
-         <string>Название файла</string>
+         <string>File name</string>
         </property>
        </widget>
       </item>
@@ -402,7 +402,7 @@
           <item>
            <widget class="QLabel" name="label_5">
             <property name="text">
-             <string>Громкость:</string>
+             <string>Volume:</string>
             </property>
            </widget>
           </item>
